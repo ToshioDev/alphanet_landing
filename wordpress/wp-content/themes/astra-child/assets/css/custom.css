@@ -1,0 +1,109 @@
+/* Estilos personalizados para Astra Child Theme */
+
+/* Estilos para la sección hero */
+.hero-section {
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  max-width: 600px;
+}
+
+/* Estilos para las cajas de contenido */
+.content-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.box {
+  flex: 1 1 300px;
+  padding: 1rem;
+}
+
+.box-left {
+  background-color: #e0e0e0;
+}
+
+.box-right {
+  background-color: #d0d0d0;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .content-boxes {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .box {
+    flex: 1 1 100%;
+  }
+}
+
+/* Aquí puedes añadir más estilos personalizados */
+/* Estilos generales del header */
+.site-header {
+  background-color: #fff;
+  border-bottom: 2px solid #e4e4e4;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Topbar: Email, teléfono, redes */
+.topbar {
+  font-size: 0.9rem;
+  background-color: #f9f9f9;
+  color: #1c347f;
+  text-align: right;
+  padding: 0.4rem 1.5rem;
+}
+
+/* Logo + Menú horizontal */
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+/* Menú principal */
+.main-navigation .nav-menu {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu li a {
+  color: #1c347f;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #8dc63f;
+}
+
+.nav-menu li.current-menu-item a {
+  color: #8dc63f;
+  font-weight: 600;
+}
