@@ -80,6 +80,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
+  position: relative;
 }
 
 /* Menú principal */
@@ -106,4 +107,71 @@
 .nav-menu li.current-menu-item a {
   color: #8dc63f;
   font-weight: 600;
+}
+
+/* Contact info layout */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar .contact-info span {
+  margin-right: 1rem;
+}
+.topbar .social-icons a {
+  margin-left: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+.topbar .social-icons a:hover {
+  color: #8dc63f;
+}
+
+/* Menu toggle */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.menu-toggle .hamburger,
+.menu-toggle .hamburger::before,
+.menu-toggle .hamburger::after {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: #1c347f;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.menu-toggle .hamburger::before,
+.menu-toggle .hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.menu-toggle .hamburger::before { top: -8px; }
+.menu-toggle .hamburger::after { top: 8px; }
+
+@media (max-width: 768px) {
+  .main-navigation {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    display: none;
+    padding: 1rem 2rem;
+  }
+  .main-navigation.active {
+    display: block;
+  }
+  .main-navigation .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .menu-toggle {
+    display: block;
+  }
 }
