@@ -14,7 +14,15 @@
 <body <?php body_class(); ?>>
 <header class="site-header">
   <div class="topbar">
-    <!-- Email / Teléfono / Enlaces sociales -->
+    <div class="contact-info">
+      <span class="phone"><span class="dashicons dashicons-phone"></span> (800) 123-4567</span>
+      <span class="email"><span class="dashicons dashicons-email"></span> contacto@example.com</span>
+    </div>
+    <div class="social-icons">
+      <a href="#" class="social-icon" aria-label="Facebook"><span class="dashicons dashicons-facebook"></span></a>
+      <a href="#" class="social-icon" aria-label="Instagram"><span class="dashicons dashicons-instagram"></span></a>
+      <a href="#" class="social-icon" aria-label="Twitter"><span class="dashicons dashicons-twitter"></span></a>
+    </div>
   </div>
 
   <div class="navbar-wrapper">
@@ -30,6 +38,9 @@
         ));
       ?>
     </nav>
+    <button class="menu-toggle" aria-label="<?php esc_attr_e( 'Abrir menú', 'astra-child' ); ?>">
+      <span class="hamburger"></span>
+    </button>
   </div>
 </header>
 
